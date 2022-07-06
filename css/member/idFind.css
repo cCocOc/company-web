@@ -1,0 +1,43 @@
+.idFind {
+    padding: 10px;
+}
+.idFindTitle {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 40px;
+}
+.idFindTitle p {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+}
+.idFind1 {
+    font-size: 11px;
+}
+.idFind2 {
+    background-color: rgb(248, 243, 237);
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    padding-left: 10px;
+}
+.idFind input {
+    height: 20px;
+    margin-top: 10px;
+}
+#input1 {
+    width: 30%;
+}
+.check {
+    text-align: center;
+    font-size: 15px;
+}
+.close {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(194, 194, 194);
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 50px;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입2</title>
+
+  <!-- Main CSS : Header, Main, Footer -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/member/join.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!-- Bootstarp JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#headerTop').load("/headerTop.html");
+      $('#header').load("/header.html");     
+      $('#footer').load("/footer.html");
+    });
+  </script>
+
+</head>
+<body>
+  <!-- 헤더 -->
+  <div id="headerTop"></div>
+  <div id="header" class="sticky-top"></div>
+
+  <!-- 메인 -->
+  <!-- COMMON -->
+  <div class="commonSection1">
+    <div class="commonContent1">
+      <img src="/img/member/sub-visual02.jpg" 
+          style="width: 100%; height: 100%;">
+      <div class="commonContent2 text-center">
+        <div>
+          <h3>MEMBER</h3>
+        </div>
+        <div>
+          <p><img src="/img/icon-home.png"> > 회원가입</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 메인 -->
+  <!-- 회원가입 -->
+  <div class="join2">
+    <div class="container">
+      <div class="join2Title">
+        <h4>회원가입</h4>
+        <p>The design and maintenance are excellent.</p>
+      </div>
+      <div class="join2Info1">
+        <span>OOO사이트에 오신 것을 환영합니다.</span><br>
+        <span>-이름과 이메일을 입력해 주시면 가입여부를 확인 후 회원가입 절차가 이루어집니다.</span>
+      </div><br>
+      <div class="join2Info2">
+        <span>회원가입을 위해서 아래의 양식에 있는 내용을 입력해 주셔야 합니다.</span><br>
+        <span>-회원님의 개인정보를 신중하게 보호하고 있으며 회원님의 동의 없이는 기재하신 회원정보가 누출되지 않습니다. 자세한 내용은 개인정보보호정책에서 확인하세요.</span>
+      </div><br>
+      <form action="#" name="joinForm">
+        <div class="join2Table2">
+          <span>기본정보</span>
+          <table class="join2Table">
+            <tr>
+              <td>아이디</td>
+              <td><input type="text" class="join2Input1">
+              <img src="../img/member/btn_iddupl.gif" onclick="" >
+              (영문 소문자, 숫자4~16자)</td>
+            </tr>
+            <tr>
+              <td>비밀번호</td>
+              <td><input type="password" class="join2Input1">
+                영문/숫자/특수문자('~!@^*()-_+[]{}\:,.<>/) 조합으로 8~16자리. 첫글자는 영문자로 사용</td>
+            </tr>
+            <tr>
+              <td>비밀번호 확인</td>
+              <td><input type="password" class="join2Input1"></td>
+            </tr>
+            <tr>
+              <td>이름</td>
+              <td><input type="text" value="asd" class="join2Input2"></td>
+            </tr>
+            <tr>
+              <td>이메일</td>
+              <td>
+                <input type="text" value="asd" class="join2Input2">
+                @
+                <input type="text" value="asd.asd" class="join2Input2">
+              </td>
+            </tr>
+            <tr>
+              <td>이메일 수신여부</td>
+              <td>
+                <input type="radio" value="수신">수신
+                <input type="radio" value="수신안함">수신안함
+              </td>
+            </tr>
+            <tr>
+              <td>비밀번호 확인시 질문</td>
+              <td>
+                <select name="a" id="a">
+                  <option value="" selected>-------선택-------</option>
+                  <option value="1">기억에 남는 추억의 장소는?</option>
+                  <option value="2">자신의 인생 좌우명은?</option>
+                  <option value="3">자신의 보물 제1호는?</option>
+                  <option value="4">가장 기억에 남는 선생님 성함은?</option>
+                  <option value="5">타인이 모르는 자신만의 신체비밀이 있다면?</option>
+                  <option value="6">추억하고 싶은 날짜가 있다면?</option>
+                  <option value="7">받았던 선물 중 기억에 남는 독특한 선물은?</option>
+                  <option value="8">유년시절 가장 생각나는 친구 이름은?</option>
+                  <option value="9">인상깊게 읽은 책 이름은?</option>
+                  <option value="10">읽은 책 중에서 좋아하는 구절이 있다면?</option>
+                  <option value="11">자신이 두 번째로 존경하는 인물은?</option>
+                  <option value="12">친구들에게 공개하지 않은 어릴적 별명이 있다면?</option>
+                  <option value="13">초등학교 때 기억에 남는 짝꿍 이름은?</option>
+                  <option value="14">다시 태어나면 되고 싶은 것은?</option>
+                  <option value="15">내가 좋아하는 캐릭터는?</option>
+                  <option value="16">나의 주민등록번호 끝자리는?</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>비밀번호 확인시 답변</td>
+              <td><input type="text"></td>
+            </tr>
+            <tr>
+              <td>성별</td>
+              <td>
+                <input type="radio" value="남자">남자
+                <input type="radio" value="여자">여자
+              </td>
+            </tr>
+            <tr>
+              <td>생년월일</td>
+              <td><input type="date" id="" value="2022-07-05"
+                min="1900-01-01" max="2030-12-31"></td>
+            </tr>
+          </table>
+        </div><br>
+      </form>
+      <div class="join2Con1">
+        <span>부가정보</span>
+        <hr>
+      </div>
+      <div class="imageBtn">
+        <input type="image" src="../img/member/btn_confirm.gif" onclick="join()">
+        <input type="image" src="../img/member/btn_cancel.gif" onclick="reset()">
+      </div>
+    </div>
+  </div>
+
+  <!-- 푸터 -->
+  <div id="footer"></div>
+  <script>
+    function join() {
+      var form = document.joinForm;
+      form.submit();
+    }
+    function reset() {
+      var form = document.joinForm;
+      form.reset(); // 입력지움.
+    }
+  </script>
+</body>
+</html>

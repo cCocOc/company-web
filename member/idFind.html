@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원아이디 찾기</title>
+
+  <link rel="stylesheet" href="../css/member/idFind.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!-- Bootstarp JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div class="idFind">
+    <form action="#" name="idFindForm">
+      <div class="idFindTitle">
+        <p>아이디 찾기</p>
+      </div><br>
+      <div class="idFind1">
+        <span>아이디를 잊어버리셨나요?</span><br>
+        <span>회원님의 성명과 이메일을 입력하여 주세요.</span>
+      </div>
+      <div class="idFind2">
+        <img src="/img/member/txt_join1.gif">
+        <input type="text" id="input1"><br>
+        <img src="/img/member/txt_join3.gif">
+        <input type="email">
+      </div>
+      <div class="check">
+        <div><input type="image" src="../img/member/btn_confirm.gif"
+          onclick="submit();"></div>
+        <div class="close"><input type="image" src="../img/member/btn_close.gif"
+         onclick="window.close();"></div>
+      </div>
+    </form>
+  </div>
+  <script>
+    function submit() {
+                 //name으로 찾아온다.
+      var form = document.idFindForm;
+      form.submit(); //Form을 submit한다.
+    }
+  </script>
+</body>
+</html>

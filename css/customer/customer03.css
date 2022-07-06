@@ -1,0 +1,46 @@
+.FAQTitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.FAQTitle span {
+    font-size: 11px;
+    color: gray;
+}
+table {
+    width: 100%;
+    border-top: 3px solid gray;
+    border-collapse: collapse;
+    margin-bottom: 70px;
+}
+td {
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    color: gray;
+}
+td:nth-child(1) {
+    font-size: 13px;
+    font-weight: bolder;
+    text-align: center;
+}
+td:nth-child(2) {
+    font-size: 12px;
+}
+.FAQSearch {
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.FAQSearch input,select {
+  color: gray;
+}
+.FAQSearch img{
+  border: 1px solid gray;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+.FAQTable a {
+    color: gray;
+}
+.FAQTable a:hover {
+    color: black;
+    text-decoration: none;
+}

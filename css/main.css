@@ -1,0 +1,361 @@
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 플로팅버튼 */
+.toTopScroll {
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  right: 5px;
+  bottom: 5px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+/* 탑메뉴 */
+.topMenu span a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+.topMenu span a:link {
+  color: #5a5a5a;
+}
+.topMenu span a:hover {
+  color: #5a5a5a;
+}
+.top {
+  width: 100%;
+  height: 30px;
+  color: #777777;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: right;
+  border-bottom: 1px solid #ddd;
+}
+.topMenu {
+  width: 90%;
+  text-align: right;
+  vertical-align: middle;
+  line-height: 30px;
+}
+.topMenu span {
+  padding: 5px;
+}
+/* .topMenu a {
+  margin-bottom: 0;
+  text-decoration: none;
+  color: #777777;
+} */
+.topMenu .home {
+  background-image: url(/img/home01.png);
+  background-repeat: no-repeat;
+  background-position: -10% -50%;
+}
+.home > a {
+  padding: 0 0 0 22px;
+}
+
+/* 네비바의 로그인,회원가입 */
+.ljoin {
+  border-top: 1px solid rgb(202, 202, 202);
+  border-bottom: 1px solid rgb(202, 202, 202);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.ljoin a {
+  font-size: 12px;
+  color: #555555;
+}
+.ljoin a:hover {
+  text-decoration: none;
+  color: #555555;
+}
+
+/* 네비바의 드롭다운메뉴 */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(17, 14, 14);
+  min-width: 120px;
+  z-index: 1;
+  font-size: 12px;
+  margin-top: -3px;
+  margin-left: 30px;
+}
+.dropdown-content a {
+  display: block;
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+  background-color: black;
+}
+.dropdown-content a:link {
+  color: white;
+}
+.dropdown-content a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.dropdown-content a:visited {
+  color: white;
+}
+/* 드롭다운메뉴의 마우스오버시 팝업 */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+a:hover {
+  text-decoration:none;
+}
+/* 캐러셀 */
+.main1Banner {
+  margin: 0 auto;
+}
+.main1 a.btn {
+  background-color: #002a62;
+  border: #002a62;
+  border-radius: 0;
+}
+.main1 a.btn:hover {
+  background-color: black;
+}
+/* 섹션2 */
+.mainTitle {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.mainTitle p {
+  font-size: 11px;
+  margin-top: 10px;
+}
+.mainTitle a {
+  font-size: 11px;
+  border-radius: 0;
+}
+.mainTitle a:hover {
+  background-color: #002a62;
+}
+
+/* 섹션3 */
+.main2 {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.mainTitle2 {
+  text-align: center;
+  font-size: 11px;
+}
+.main2 img {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.mainitem1:hover .overlay{
+  opacity: 0.8;
+  background-color: black;
+}
+.overl1 {
+  color: white;
+  font-size: 21px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate( -50%, -50% );
+  -ms-transform: translate( -50%, -50% );
+  transform: translate( -50%, -50% );
+  text-align: center;
+}
+.overl1 button {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  font-size: 15px;
+  height: 100%;
+}
+.overlay p {
+  font-size: 18px;
+}
+
+/* 섹션4 */
+.main3 {
+  margin-bottom: 50px;
+}
+.mainTitle3 {
+  text-align: center;
+  font-size: 11px;
+  margin-bottom: 30px;
+}
+.main3 p {
+  font-size: 11px;
+}
+.main3 a {
+  color: black;  
+}
+.main3 a:visited {
+  color: black;
+}
+.main3 a:hover {
+  text-decoration: none;
+}
+.main3 img {
+  transition: 0.5s linear;
+  margin: 0 auto;
+  
+}
+.main3 img:hover {
+  transform: scale(1.1);
+  filter: brightness(50%);
+}
+.cardHead {
+  overflow: hidden; 
+}
+
+
+/* 섹션5 */
+.mainBanner {
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+.mainBanner a {
+  color: white;
+  border-color: white;
+  border-radius: 0;
+}
+.mainBanner a:hover {
+  background-color: #002a62;
+}
+.mainBanner p {
+  font-size: 11px;
+}
+.bannerImg img {
+  width: 100%;
+  height: 200px;
+}
+.bannerTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-align: center;
+  transform: translate( -50%, -50% );
+}
+
+
+/* 섹션6 */
+.main4 {
+  margin-bottom: 50px;
+}
+.main4 a {
+  color: black;
+  text-align: right;
+}
+.main4 a:hover {
+  text-decoration:none;
+}
+.main4 a:visited {
+  color: black;
+}
+.mainTitle4 {
+  text-align: center;
+}
+.mainTitle4 p {
+  font-size: 11px;
+}
+.newsbox {
+  border: 1px solid gray;
+  padding-top: 20px;
+  font-size: 11px;
+}
+.newsboxTitle {
+  padding: 10px;
+  font-weight: bold;
+}
+.plus{
+  margin-left: 65%;
+}
+.main4 span {
+  font-size: 13px;
+}
+.os1 {
+  background-color: rgb(26, 53, 202);
+  text-align: center;
+  color: white;
+  font-size: 11px;
+  padding: 10px;
+  margin: 3px;
+}
+.os2 {
+  background-color: rgb(93, 199, 231);
+  text-align: center;
+  color: white;
+  font-size: 11px;
+  padding: 10px;
+  margin: 3px;
+}
+.os3 {
+  background-color: rgb(99, 106, 107);
+  text-align: center;
+  color: white;
+  font-size: 11px;
+  padding: 10px;
+  margin: 3px; 
+}
+/* footer */
+.footer{
+  background-color: #3f3f3f;
+  color: rgb(177, 177, 177);
+  padding: 50px;
+  font-size: 13px;
+}
+.footer a:link {
+  color: white;
+}
+.footer a:visited {
+  color: white;
+}
+.footer a:hover{
+  text-decoration:none;
+}
+.footer2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.vl {
+  border-left: 1px solid rgb(126, 126, 126);
+  height: 1px;
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* 테블릿 */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+}
+/* 모바일 */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  /* product */
+  
+  /* business */
+  
+  /* cs */
+  
+  /* footer */
+  
+}

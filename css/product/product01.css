@@ -1,0 +1,36 @@
+.productTitle {
+    text-align: center;
+}
+.productTitle span {
+    font-size: 11px;
+    color: gray;
+}
+.row img {
+    width: 100%;
+    padding: 5px;
+    margin-top: 30px;
+}
+.product a {
+    color: gray;
+    text-align: center;
+    font-size: 13px;
+}
+.product a:hover {
+    text-decoration: none;
+    color: gray;
+}
+.search {
+    margin-top: 40px;
+    font-size: 15px;
+}
+.search input,select {
+    color: gray;
+}
+.search img{
+    border: 1px solid gray;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+#footer {
+    margin-top: 50px;
+}
