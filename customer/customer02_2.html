@@ -105,18 +105,18 @@
       <table class="qna_1Table">
         <tr>
           <td>제목</td>
-          <td><input type="text" class="input1"></td>
+          <td><input type="text" class="input1" id="inputTitle"></td>
         </tr>
         <tr>
           <td>작성자</td>
-          <td><input type="text" class="input1"></td>
+          <td><input type="text" class="input1" id="inputName"></td>
         </tr>
         <tr>
           <td>비밀번호</td>
-          <td><input type="password" class="input1"></td>
+          <td><input type="password" class="input1" id="inputPW"></td>
         </tr>
         <tr>
-          <td colspan="2"><textarea name="" id="" cols="30" rows="20%"></textarea></td>
+          <td colspan="2"><textarea name="" id="inputText" cols="30" rows="20%"></textarea></td>
         </tr>
       </table>
     </div>
@@ -124,15 +124,41 @@
       <div class="btn">
         <input class="listbtn" type="image" src="../img/customer/list.gif"
         onclick="window.location.href='../customer/customer02.html'">
-        <input type="image" src="../img/customer/btn_confirm.gif">
-        <input type="image" src="../img/customer/btn_cancel.gif">
+        <input type="image" src="../img/customer/btn_confirm.gif"
+        onclick="writeCheck();">
+        <input type="image" src="../img/customer/btn_cancel.gif"
+        onclick="window.location.href='../customer/customer02.html'">
       </div>
     </div>
   </div>
 
   <!-- 푸터 -->
   <div id="footer"></div>
-  
+  <script>
+    function writeCheck() {
+      var input1 = document.getElementById('inputTitle').value;
+      var title = Number(input1.split("").length);
+      var input2 = document.getElementById('inputName').value;
+      var name = Number(input2.split("").length);
+      var input3 = document.getElementById('inputPW').value;
+      var pw = Number(input3.split("").length);
+      var input4 = document.getElementById('inputText').value;
+      var text = Number(input4.split("").length);
+
+
+      if( title < 1 || title > 100 ) {
+        alert("제목을(를) 정확히 입력하세요. [1 ~ 100 글자]");
+      }else if( name < 1 || name > 100 ){ 
+        alert("작성자을(를) 정확히 입력하세요. [1 ~ 100 글자]");
+      }else if( pw < 1 ){
+        alert("비밀번호을(를) 정확히 입력하세요.");
+      }else if( text < 1 ){ 
+        alert("내용을 입력해주세요.");
+      }else{
+        alert("업로드");
+      }
+    };
+  </script>
 
 </body>
 </html>
