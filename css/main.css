@@ -215,6 +215,7 @@ a:hover {
 }
 .main3 a:hover {
   text-decoration: none;
+  color: black;
 }
 .main3 img {
   transition: 0.5s linear;
@@ -274,6 +275,7 @@ a:hover {
 }
 .main4 a:hover {
   text-decoration:none;
+  color: black;
 }
 .main4 a:visited {
   color: black;
