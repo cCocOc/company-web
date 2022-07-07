@@ -96,29 +96,32 @@
   </nav>
 
   <!-- 묻고답하기 - 글쓰기 -->
+  
   <div class="main container">
     <div class="qna_1Title">
       <h4>묻고답하기</h4>
       <span>The design and maintenance are excellent.</span>
     </div>
     <div>
-      <table class="qna_1Table">
-        <tr>
-          <td>제목</td>
-          <td><input type="text" class="input1" id="inputTitle"></td>
-        </tr>
-        <tr>
-          <td>작성자</td>
-          <td><input type="text" class="input1" id="inputName"></td>
-        </tr>
-        <tr>
-          <td>비밀번호</td>
-          <td><input type="password" class="input1" id="inputPW"></td>
-        </tr>
-        <tr>
-          <td colspan="2"><textarea name="" id="inputText" cols="30" rows="20%"></textarea></td>
-        </tr>
-      </table>
+      <form action="#" class="joinForm">
+        <table class="qna_1Table">
+          <tr>
+            <td>제목</td>
+            <td><input type="text" class="input1" id="inputTitle"></td>
+          </tr>
+          <tr>
+            <td>작성자</td>
+            <td><input type="text" class="input1" id="inputName"></td>
+          </tr>
+          <tr>
+            <td>비밀번호</td>
+            <td><input type="password" class="input1" id="inputPW"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><textarea name="" id="inputText" cols="30" rows="20%"></textarea></td>
+          </tr>
+        </table>
+      </form>
     </div>
     <div>
       <div class="btn">
@@ -126,8 +129,8 @@
         onclick="window.location.href='../customer/customer02.html'">
         <input type="image" src="../img/customer/btn_confirm.gif"
         onclick="writeCheck();">
-        <input type="image" src="../img/customer/btn_cancel.gif"
-        onclick="window.location.href='../customer/customer02.html'">
+        <input type="image" src="../img/customer/btn_cancel.gif" 
+        onclick="reset();">
       </div>
     </div>
   </div>
@@ -157,6 +160,10 @@
       }else{
         alert("업로드");
       }
+    };
+    function reset() {
+      var form = document.joinForm;
+      form.reset(); // 입력지움.
     };
   </script>
 
