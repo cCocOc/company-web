@@ -60,12 +60,14 @@
           <table class="loginTable">
             <tr>
               <td>아이디</td>
-              <td><input type="text"></td>
-              <td rowspan="2"><a href="#"><img src="../img/member/btn_login.gif"></a></td>
+              <td><input type="text" class="loginInput" id="inputID"></td>
+              <td rowspan="2">
+                <input type="image" src="../img/member/btn_login.gif" 
+                 onclick="loginCheck()" id="loginBtn"></td>
             </tr>
             <tr>
               <td>비밀번호</td>
-              <td><input type="password"></td>
+              <td><input type="password" class="loginInput" id="inputPW"></td>
             </tr>          
           </table><br>
         </div>
@@ -83,9 +85,23 @@
       </div>
     </div>
   </div>
-
-
   <!-- 푸터 -->
   <div id="footer"></div>
+  <script>
+    function loginCheck() {
+      var loginID = document.getElementById('inputID').value;
+      var loginPW = document.getElementById('inputPW').value;
+      var IDcon = loginID.split("");
+      var PWcon = loginPW.split("");
+      
+      if ( IDcon.length < 4 || IDcon.length > 16 ) {
+        alert("아이디을(를) 숫자 및 영어로만 정확히 입력하세요. [4 ~ 16 글자]")
+      }else if ( PWcon.length < 1 ){
+        alert("비밀번호을(를) 정확히 입력하세요.")
+      }else{
+        alert("로그인 진행중")
+      }
+    };
+  </script>
 </body>
 </html>

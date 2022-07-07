@@ -21,10 +21,9 @@
 td:nth-child(1) {
     text-align: right;
 }
-.loginTable input {
+.loginInput {
     width: 95%;
-    height: 20px;
-} 
+}
 .loginSearch {
     text-align: center;
     font-size: 12px;
