@@ -42,20 +42,22 @@
 
   <script>
     // 캐러셀 작동 JS
-    $( function () {
-      //1초 타임아웃함수
-      setTimeout(function (){
+    $(document).ready(function(){
+      setTimeout(function(){
         $('.carousel').carousel({ 
           interval: 2000, //기본 5초 
           keyboard: true, //키보드이벤트 설정
           pause: 'hover',//마우스를 가져대면 자동 순환이 멈춘다.
           wrap: true, //순환설정
           touch: true //왼쪽 오른쪽 드래그 설정
-        }),
+        });
+
+      }, 
         1000
-      });     
-    });
-   
+      );
+    }
+    );
   </script>
+
 </body>
 </html>
