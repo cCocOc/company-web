@@ -90,8 +90,9 @@
   </nav>
 
   <!-- 1:1문의 -->
+  <form action="#" name="qst">
   <div class="customer1">
-    <div class="container">
+    <div class="container-xl">
       <div class="customer1Title">
         <h4>1:1문의</h4>
         <span>The design and maintenance are excellent.</span>
@@ -106,23 +107,23 @@
           </tr>
           <tr>
             <td>성명</td>
-            <td><input type="text"></td>
+            <td><input type="text" class="box1"></td>
           </tr>
           <tr>
             <td>전화번호</td>
-            <td><input type="text"></td>
+            <td><input type="text" class="box1"></td>
           </tr>
           <tr>
             <td>이메일</td>
-            <td><input type="email"></td>
+            <td><input type="email" class="box2"></td>
           </tr>
           <tr>
             <td>주소</td>
-            <td><input type="text"></td>
+            <td><input type="text" class="box2"></td>
           </tr>
           <tr>
             <td>제목</td>
-            <td><input type="text"></td>
+            <td><input type="text" class="box2"></td>
           </tr>
           <tr id="tr1">
             <td>설명</td>
@@ -131,13 +132,24 @@
         </table>
       </div>
       <div class="button">
-        <button class="btn1">확인</button>
-        <button class="btn2">취소</button>
+        <button class="btn1" onclick="uplode()">확인</button>
+        <button class="btn2" onclick="reset()">취소</button>
       </div>
     </div>
   </div>
+</form>
 
   <!-- 푸터 -->
   <div id="footer"></div>
+  <script>
+    function uplode() {
+      var form = document.qst;
+      form.submit();
+    }
+    function reset() {
+      var form = document.qst;
+      form.reset(); // 입력지움.
+    }
+  </script>
 </body>
 </html>
