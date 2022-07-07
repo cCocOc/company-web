@@ -96,6 +96,7 @@
   </nav>
 
   <!-- 묻고답하기 - 글쓰기 -->
+  <form action="#">
   <div class="main container">
     <div class="qna_1Title">
       <h4>묻고답하기</h4>
@@ -125,14 +126,20 @@
         <input class="listbtn" type="image" src="../img/customer/list.gif"
         onclick="window.location.href='../customer/customer02.html'">
         <input type="image" src="../img/customer/btn_confirm.gif">
-        <input type="image" src="../img/customer/btn_cancel.gif">
+        <input type="image" src="../img/customer/btn_cancel.gif" onclick="reset()">
       </div>
     </div>
   </div>
+</form>
 
   <!-- 푸터 -->
   <div id="footer"></div>
-  
+  <script>
+    function reset() {
+      var form = document.joinForm;
+      form.reset(); // 입력지움.
+    }
+  </script>
 
 </body>
 </html>
