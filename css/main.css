@@ -207,11 +207,15 @@ a:hover {
 .main3 a {
   color: black;  
 }
+.main3 a:link {
+  color: black;  
+}
 .main3 a:visited {
   color: black;
 }
 .main3 a:hover {
   text-decoration: none;
+  color: black;
 }
 .main3 img {
   transition: 0.5s linear;
@@ -266,8 +270,12 @@ a:hover {
   color: black;
   text-align: right;
 }
+.main4 a:link {
+  color: black;  
+}
 .main4 a:hover {
   text-decoration:none;
+  color: black;
 }
 .main4 a:visited {
   color: black;
