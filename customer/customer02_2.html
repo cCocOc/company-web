@@ -24,6 +24,12 @@
       $('#footer').load("../footer-sub.html");
     });
   </script>
+  <style>
+    @media ( min-width: 1024px ) {
+      .input1{ width: 70%;}
+      input[type="password"]{ width: 40%;}
+    }
+  </style>
 
 </head>
 <body>
@@ -90,11 +96,43 @@
   </nav>
 
   <!-- 묻고답하기 - 글쓰기 -->
-  
+  <div class="main container">
+    <div class="qna_1Title">
+      <h4>묻고답하기</h4>
+      <span>The design and maintenance are excellent.</span>
+    </div>
+    <div>
+      <table class="qna_1Table">
+        <tr>
+          <td>제목</td>
+          <td><input type="text" class="input1"></td>
+        </tr>
+        <tr>
+          <td>작성자</td>
+          <td><input type="text" class="input1"></td>
+        </tr>
+        <tr>
+          <td>비밀번호</td>
+          <td><input type="password" class="input1"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><textarea name="" id="" cols="30" rows="20%"></textarea></td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <div class="btn">
+        <input class="listbtn" type="image" src="../img/customer/list.gif"
+        onclick="window.location.href='../customer/customer02.html'">
+        <input type="image" src="../img/customer/btn_confirm.gif">
+        <input type="image" src="../img/customer/btn_cancel.gif">
+      </div>
+    </div>
+  </div>
 
   <!-- 푸터 -->
   <div id="footer"></div>
-
+  
 
 </body>
 </html>
